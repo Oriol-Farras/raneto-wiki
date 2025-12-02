@@ -1,5 +1,7 @@
 # Raneto [![Node.js CI](https://github.com/ryanlelek/Raneto/actions/workflows/nodejs.ci.yml/badge.svg)](https://github.com/ryanlelek/Raneto/actions/workflows/nodejs.ci.yml) [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B44615%2Fgithub.com%2Fryanlelek%2FRaneto.svg?type=shield&issueType=license)](https://app.fossa.com/projects/custom%2B44615%2Fgithub.com%2Fryanlelek%2FRaneto?ref=badge_shield&issueType=license)
 
+https://raneto-wiki.onrender.com/
+
 [![Raneto Logo](https://raw.githubusercontent.com/ryanlelek/Raneto/main/logo/logo_readme.png)](https://raneto.com/)
 
 [Raneto](https://raneto.com) is a free, open, simple Markdown-powered knowledge base for Node.js.  
