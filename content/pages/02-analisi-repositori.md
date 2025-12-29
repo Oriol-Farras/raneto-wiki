@@ -2,12 +2,7 @@
 Title: 2. Anàlisi del Repositori (Arqueologia de Codi)
 Description: Dades del GitHub, anàlisi de commits històrics, conflictes i fites tècniques.
 Sort: 2
-Template: default
 */
-
-# 2. Anàlisi del Repositori i "Arqueologia de Commits"
-
-Aquest apartat analitza l'evolució del projecte a través de les dades del repositori oficial `pytorch/pytorch`.
 
 ## Dades Vives (Gener 2025)
 *   **Popularitat:** +80k Stars, +20k Forks.

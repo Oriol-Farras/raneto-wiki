@@ -2,10 +2,7 @@
 Title: 1. Introducció i Història: De Lua a Python
 Description: Orígens de PyTorch, filosofia tècnica i evolució des de Torch7.
 Sort: 1
-Template: default
 */
-
-# 1. Introducció i Història: L'Evolució d'un Gegant
 
 ## Introducció: Què és realment PyTorch?
 Més enllà de ser una simple llibreria, **PyTorch** s'ha convertit en el "sistema operatiu" de la recerca en Intel·ligència Artificial moderna. Tècnicament, es defineix com una llibreria de tensors optimitzada per a GPU (basada en nuclis CUDA) unida a un sistema de diferenciació automàtica de "cinta" (*tape-based autograd*).

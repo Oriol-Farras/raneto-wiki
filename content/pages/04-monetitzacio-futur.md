@@ -2,10 +2,7 @@
 Title: 4. Monetització, Futur i Conclusions
 Description: Model de negoci Open Source, valoració personal i reptes de futur.
 Sort: 4
-Template: default
 */
-
-# 4. Monetització i Conclusions
 
 ## Model de Negoci: "Commoditize the Complement"
 Com genera diners un projecte que és gratuït? La resposta està en l'economia del programari lliure. El model de PyTorch és el clàssic **"Commoditize the Complement"**.

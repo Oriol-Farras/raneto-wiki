@@ -2,12 +2,8 @@
 Title: 3. Governança, Comunitat i Fundació
 Description: Com es governa el projecte, el pas a la Linux Foundation i el rol de les Big Tech.
 Sort: 3
-Template: default
 */
 
-# 3. Governança: De la Corporació a la Fundació
-
-Com es governa un projecte utilitzat per milions de persones i empreses rivals?
 
 ## L'Era Facebook (2016-2022): El "Dictador Benèvol"
 Durant els primers 6 anys, PyTorch era propietat intel·lectual de Meta (Facebook). El repositori vivia sota `facebookresearch`.

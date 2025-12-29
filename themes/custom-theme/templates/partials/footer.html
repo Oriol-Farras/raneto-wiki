@@ -1,0 +1,78 @@
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="footer-content">
+            <p class="footer-text">
+              {{#config.copyright}}
+              <span class="copyright">{{{config.copyright}}}</span>
+              <span class="separator">•</span>
+              {{/config.copyright}}
+              <span class="powered-by">Powered by <a href="https://raneto.com" target="_blank" rel="opener">Raneto</a> with <a href="https://github.com/raneto/theme-default" target="_blank" rel="opener">Default Theme</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  {{#config.allow_editing}}
+  {{#loggedIn}}
+
+    <!-- Modal: Add Page -->
+    <div class="modal fade" id="addModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">{{lang.global.addPage}}</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{lang.global.close}}"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="page-name" class="form-label">{{lang.global.pageName}}:</label>
+              <input type="text" class="form-control" id="page-name">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">{{lang.global.cancel}}</button>
+            <button class="btn btn-primary" id="add-page-confirm" type="button">{{lang.global.save}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Delete Page -->
+    <div class="modal fade" id="deleteModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="modal-title" id="myModalLabel">{{lang.global.reallyDeletePage}}</h4>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">{{lang.global.no}}</button>
+            <button class="btn btn-primary" id="delete-page-confirm" type="button">{{lang.global.yes}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{/loggedIn}}
+  {{/config.allow_editing}}
+
+  <!-- JavaScript -->
+  <script src="{{config.base_url}}/lib/jquery/dist/jquery.min.js"></script>
+  <script src="{{config.base_url}}/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- TODO: Move back to package.json include -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="{{config.base_url}}/lib/marked/lib/marked.umd.js"></script>
+  <script src="{{config.base_url}}/lib/codemirror/lib/codemirror.js"></script>
+  <script src="{{config.base_url}}/lib/codemirror/mode/markdown/markdown.js"></script>
+  <script src="{{config.base_url}}/lib/codemirror/addon/edit/continuelist.js"></script>
+  <script src="{{config.base_url}}/scripts/editor.js"></script>
+  <script src="{{config.base_url}}/scripts/raneto.js"></script>
+
+</body>
+</html>
