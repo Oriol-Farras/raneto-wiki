@@ -8,8 +8,63 @@ Sort: 2
 *   **Popularitat:** +80k Stars, +20k Forks.
 *   **Velocitat:** El projecte es mou a una velocitat vertiginosa, tancant centenars de Pull Requests setmanals. Això demostra que no està en "mode manteniment", sinó en expansió agressiva.
 
-## Model de negoci i llicenciament
+## Infraestructura de Desenvolupament
 
+### Control de Versions: Git i GitHub
+PyTorch utilitza **Git** com a sistema de control de versions, amb el repositori principal allotjat a **GitHub** (`pytorch/pytorch`). L'ús de GitHub no és casual: facilita la col·laboració oberta i l'automatització de processos.
+
+**Workflow de desenvolupament:**
+*   **Branques principals:** `main` (desenvolupament), `viable/strict` (versions estables)
+*   **Model de PR:** Obligatori passar revisió de codi + tests automàtics abans de fusionar
+*   **Politica de commits:** Squash commits per mantenir l'historial net
+*   **Signatura de commits:** No obligatòria, però recomanada per a core contributors
+
+### Bug Tracking i Gestió de Tasques: GitHub Issues
+El sistema de **GitHub Issues** actua com a hub centralitzat per a múltiples propòsits:
+*   **Bugs:** Etiquetats amb labels com `bug`, `high priority`, `triaged`
+*   **Feature Requests:** La comunitat proposa noves funcionalitats (label: `enhancement`)
+*   **Discussions:** Issues marcades com `question` per a dubtes tècnics
+*   **Volum:** ~10.000 issues obertes simultàniament, amb temps de resposta mitjà de 2-3 dies per a bugs crítics
+*   **Triage:** Equip dedicat que classifica i assigna prioritats diàriament
+
+**Particularitat:** PyTorch també utilitza **Discussions** de GitHub per a converses més llargues sobre arquitectura o roadmap, separant-les dels bugs concrets.
+
+### Documentació: Sphinx i Hosting Oficial
+La documentació de PyTorch es genera amb **Sphinx**, l'eina estàndard de Python per a documentació tècnica:
+*   **Font:** Fitxers `.rst` (reStructuredText) i docstrings en el codi Python
+*   **Build automatitzat:** Cada PR que modifica docstrings desencadena una preview de la documentació
+*   **Hosting:** [pytorch.org/docs](https://pytorch.org/docs) - allotjat en CDN per a velocitat global
+*   **Versionat:** Documentació separada per a cada versió major (1.x, 2.0, 2.1, etc.)
+*   **Multiidioma:** Suport per a traduccions comunitàries (Xinès, Coreà, Japonès)
+
+**Curiositat:** La documentació s'actualitza automàticament cada 6 hores des de la branca `main`, permetent veure canvis recents abans del release oficial.
+
+### CI/CD: GitHub Actions i PyTorch HUD
+PyTorch té un dels sistemes de **Continuous Integration** més complexos de l'ecosistema Python:
+
+**GitHub Actions (Build i Tests):**
+*   **Matriu de tests massiva:** Cada PR executa +100.000 tests en ~50 configuracions diferents
+    *   Sistemes operatius: Linux (Ubuntu, CentOS), Windows, macOS
+    *   Versions Python: 3.8, 3.9, 3.10, 3.11, 3.12
+    *   Hardware: CPU, CUDA 11.8, CUDA 12.1, ROCm (AMD), CPU-only
+*   **Temps d'execució:** Un cicle complet de CI triga 4-6 hores
+*   **Infraestructura:** Utilitzen runners self-hosted amb GPUs NVIDIA proporcionades per Meta
+
+**PyTorch HUD (Health Dashboard):**
+*   **Eina pròpia:** [hud.pytorch.org](https://hud.pytorch.org) - dashboard interna per monitoritzar la salut del repositori
+*   **Funcionalitat:**
+    *   Visualització de flakiness tests (tests intermitents que fallen aleatòriament)
+    *   Tracking de temps de build per identificar regressions de rendiment
+    *   Alertes automàtiques quan la success rate de CI baixa del 95%
+*   **Accés:** Públic en mode lectura, permet a la comunitat veure l'estat real del projecte
+
+**Deployment:**
+*   **PyPI:** Builds automàtics de wheels per a totes les plataformes cada release
+*   **Conda:** Integració amb conda-forge per a distribució alternativa
+*   **Docker:** Imatges oficials a Docker Hub, actualitzades amb cada nightly build
+
+
+## Model de negoci i llicenciament
 
 ### Llicència: BSD-3-Clause (Modificada)
 PyTorch es distribueix sota una llicència BSD de 3 clàusules, amb algunes modificacions específiques introduïdes per Facebook/Meta. En la pràctica, això és una llicència molt permissiva i favorable per als usuaris.
