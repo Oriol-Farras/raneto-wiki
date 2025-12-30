@@ -1,15 +1,16 @@
 // Modules
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // Which Theme to Use?
 //
 // Local Directory Example (for development or custom themes)
-// const theme_dir = path.join(__dirname, 'themes');
+// const theme_dir = path.join(__dirname, '..', 'themes');
 // const theme_name = 'my-theme-directory';
 //
 // Themes from NPM
 // use "dist" as the theme name for modules (for now)
-const __dirname = import.meta.dirname;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const theme_dir = path.join(
   __dirname,
   '..',
