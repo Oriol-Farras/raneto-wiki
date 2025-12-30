@@ -5,6 +5,34 @@ Sort: 5
 */
 
 ## Model de Negoci: "Commoditize the Complement"
+
+### Llicència i Cost per als Usuaris
+
+**Llicència: BSD-3-Clause (Permissiva)**
+PyTorch utilitza una llicència BSD de 3 clàusules, que és una de les llicències de codi obert més permissives que existeixen:
+
+*   **Implicacions legals clau:**
+    *  **Ús comercial il·limitat:** Pots utilitzar PyTorch en productes propietaris sense restriccions
+    *  **No cal obrir el codi derivat:** A diferència de la GPL (copyleft), no estàs obligat a publicar modificacions
+    *  **Modificació i redistribució:** Pots modificar PyTorch i redistribuir-lo (mantenint el copyright original)
+    *  **Compatibilitat amb llicències propietàries:** Pots combinar PyTorch amb codi tancat
+    *  **Sense garanties:** El programari es proporciona "tal qual", sense garanties legals
+
+*   **Comparativa amb altres llicències:**
+    *   **GPL (Copyleft):** Obligaria a fer Open Source qualsevol producte que incorporés PyTorch
+    *   **Apache 2.0:** Similar a BSD però amb proteccions de patents més explícites
+    *   **MIT:** Encara més simple que BSD, però sense clàusula de no-endorsement
+
+**Per què BSD i no GPL?**
+La decisió de Meta/Linux Foundation d'usar BSD no és casual. Volen que PyTorch sigui adoptat per tothom, incloent empreses que no poden/volen obrir el seu codi. Si haguessin usat GPL, empreses com Apple o Amazon no l'utilitzarien per por de contaminació legal del seu codi propietari.
+
+**Cost per als Usuaris: 100% Gratuït**
+*   **Descàrrega i ús:** Completament gratuït, sense cap limitació
+*   **No hi ha versions "Pro" o "Enterprise":** El mateix codi per a tots
+*   **No cal registre ni pagament:** Descarregues des de PyPI o conda sense barreres
+*   **Suport comercial:** Opcional i de tercers (Lightning AI, etc.), no oficial
+
+### L'Estratègia del "Complement"
 Com genera diners un projecte que és gratuït? La resposta està en l'economia del programari lliure. El model de PyTorch és el clàssic **"Commoditize the Complement"**.
 
 1.  **El "Commodity":** El programari (PyTorch). Es regala per fer-lo omnipresent i estàndard.
