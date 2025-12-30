@@ -8,6 +8,21 @@ Sort: 2
 *   **Popularitat:** +80k Stars, +20k Forks.
 *   **Velocitat:** El projecte es mou a una velocitat vertiginosa, tancant centenars de Pull Requests setmanals. Això demostra que no està en "mode manteniment", sinó en expansió agressiva.
 
+## Model de negoci i llicenciament
+
+
+### Llicència: BSD-3-Clause (Modificada)
+PyTorch es distribueix sota una llicència BSD de 3 clàusules, amb algunes modificacions específiques introduïdes per Facebook/Meta. En la pràctica, això és una llicència molt permissiva i favorable per als usuaris.
+
+Pel que fa a l’ús, no hi ha pràcticament limitacions: es pot utilitzar PyTorch en projectes comercials sense cap mena de restricció, modificar el codi i redistribuir-lo lliurement. A diferència de llicències com la GPL, no cal fer públics els canvis que es facin. L’única obligació real és mantenir els avisos de copyright originals. També inclou una clàusula de patents: Meta concedeix una llicència sobre les seves patents relacionades amb PyTorch, però aquesta llicència es revoca si l’usuari inicia una demanda de patents contra Meta.
+
+L’elecció de la BSD-3 en lloc d’Apache o MIT no és casual. Aquesta llicència permet protegir millor la marca “PyTorch” i evita que tercers puguin utilitzar el nom o fer branding enganyós sobre versions modificades del framework.
+
+### Cost per als Usuaris: 100% Gratuït
+Quant al cost, PyTorch és completament gratuït. No existeixen versions Enterprise ni edicions de pagament: el mateix codi s’utilitza tant en una startup petita com en grans empreses com Google. El projecte es manté gràcies a finançament corporatiu (principalment de Meta, NVIDIA, AMD i Microsoft) i a les contribucions gestionades sota el paraigua de la Linux Foundation.
+
+Les empreses que hi participen no guanyen diners venent PyTorch en si, sinó pel que l’envolta. Meta el fa servir com a infraestructura clau per a productes propis com Instagram Reels o les transcripcions de WhatsApp. NVIDIA es beneficia indirectament perquè un bon suport de CUDA a PyTorch impulsa la venda de GPUs. I moltes startups construeixen negoci oferint serveis, consultoria o plataformes basades en PyTorch, com és el cas de Lightning AI o Hugging Face.
+
 ## Fites Històriques i Curiositats del Codi
 
 ### 1. La "Gran Unificació": Variable i Tensor (v0.4.0 - Abril 2018)
