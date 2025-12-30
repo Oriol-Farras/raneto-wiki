@@ -1,7 +1,7 @@
 /*
-Title: 4. Monetització, Futur i Conclusions
+Title: 5. Monetització, Futur i Conclusions
 Description: Model de negoci Open Source, valoració personal i reptes de futur.
-Sort: 4
+Sort: 5
 */
 
 ## Model de Negoci: "Commoditize the Complement"

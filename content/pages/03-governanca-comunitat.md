@@ -130,4 +130,4 @@ A diferència de projectes petits amb Patreon o "Buy me a coffee", PyTorch opera
 
 
 ---
-**Següent:** [4. Monetització i Conclusions](/cas-estudi-pytorch/04-monetitzacio-futur)
+**Següent:** [4. Comparativa](/cas-estudi-pytorch/04-comparativa)
